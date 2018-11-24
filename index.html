@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chromecast Remote</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script type="text/javascript" src="cast_sender.js"></script>
+    <script src="helloVideos.js"></script>
+    <script src="remote-control.js"></script>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+<div>
+    <div>
+        <h1 style="display:block">Chromecast Remote</h1>
+
+        <a href="#" id="orf1" onclick="loadORF1();return false;">
+            <div class="card">
+                <span class="orf">ORF</span> eins
+            </div>
+        </a>
+        <a href="#" id="orf2" onclick="loadORF2();return false;">
+            <div class="card">
+                <span class="orf">ORF</span> 2
+            </div>
+        </a>
+
+        <div class="container">
+            <a id="playpauseresume" onclick="playMedia();return false;" href="#">Play</a>
+            <a onclick="stopMedia();return false;" href="#">Stop media</a>
+            <a id="muteunmute" onclick="muteMedia();return false;" href="#">Mute media</a>
+            <div>
+                <input class="vertical" type="range" min="0" max="100" step="1"
+                       onmouseup="setReceiverVolume(this.value/100,false);">
+                <div class="vertical">Volume control</div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

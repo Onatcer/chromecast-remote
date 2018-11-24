@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.ttf') format('ttf');
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.ttf') format('ttf');
+    font-weight: 100;
+}
+
+*{
+    font-family: "Open Sans";
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Open Sans";
+    color: #8795a1;
+    font-weight: 100;
+    text-align: center;
+}
+
+.card{
+    border-radius: 8px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    font-size: 4rem;
+    color: #000000;
+    position: relative;
+
+}
+
+.active .card:after{
+    content: 'STREAMING';
+    color: #df0b25;
+    font-size: 1rem;
+    border: 3px #df0b25 solid;
+    padding: 5px 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.loading .card:after{
+    content: 'LOADING';
+    color: #aaaaaa;
+    font-size: 1rem;
+    border: 3px #aaaaaa solid;
+    padding: 5px 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+a{
+    text-decoration: none !important;
+    display: inline-block;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    display: block;
+
+}
+
+.orf{
+    background-color: #df0b25;
+    padding: 5px 30px;
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container a, .container>div{
+    width: 23%;
+    min-width: 200px;
+    margin: 1%;
+    color: #000;
+    background-color: #FFF;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
